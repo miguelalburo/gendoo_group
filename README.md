@@ -1,143 +1,52 @@
-# 🧭 Git Collaboration Workflow Cheat Sheet
+# 🧬 Epigenetic regulation of liver endothelial cells (LSECs) as a novel target to boost immunotherapy efficacy in hepatocellular cancer (HCC)
 
-_A concise guide for effective teamwork using Git._
+## 🔍 Background
+The overarching research question is: “How can epigenetic regulation of the tumour endothelium be targeted to reprogramme the immune microenvironment of liver cancer?” This question addresses the challenges in treating hepatocellular carcinoma (HCC), a leading cause of cancer-related mortality globally, with rising incidence in the UK. The tumour microenvironment (TME) promotes immune evasion, limiting the efficacy of immunotherapy in HCC. Liver sinusoidal endothelial cells (LSECs) undergo endothelial-to-mesenchymal transition (EndoMT), fostering a pro-angiogenic state that contributes to immunosuppression. Preliminary bulk RNA-seq data indicates that the epigenetic regulator EHMT2 is significantly upregulated in LSECs in HCC, correlating with increased infiltration of pro-cancer immune cells and poorer patient outcomes in publicly available data. We hypothesize that EHMT2 drives EndoMT and immune cell recruitment through histone and non-histone methylation, suggesting that targeting EHMT2 could reverse these epigenetic changes to develop novel therapeutic strategies.
 
----
+## 🎯 Objectives
+1) Analyse ATAC-seq data from LSECs with and without EHMT2 knockdown to identify alterations in chromatin accessibility regions influenced by EHMT2-mediated methylation.
 
-## 🚀 1. Setup
+2) Correlate ATAC-seq findings with bulk RNA-seq data from the same samples to determine how EHMT2’s downstream
+effects influence gene transcription, particularly for EndoMT markers (e.g., αSMA, vimentin) and immune cell recruitment
+pathways.
 
-Clone the repository:
+3) Identify key differentially accessible regions and associated genes that may explain EHMT2’s role in promoting immune
+evasion in the HCC TME, supporting further experiments with human HCC samples and in vitro models (e.g., flow-based
+adhesion assays investigating EHMT2 impact on immune cell recruitment).
+
+
+## 📁 Files & Directories
+
 ```bash
-git clone https://github.com/org/project.git
-cd project
+bioinformatics-project/
+├── docs/                    # essential and useful project docs
+│   ├── tasks.docx
+│   ├── minutes.docx
+│   ├── report.pdf
+│   ├── presentation.mov 
+│   └── references.bib
+├── notebooks/
+├── data/
+│   ├── raw/                  # symbolic links or small example subsets only
+│   ├── processed/
+│   └── metadata/             # sample info, config, manifests
+├── scripts/
+│   ├── preprocessing/ 
+│   ├── analysis/             # main workflows
+│   ├── visualization/
+│   └── utils/                # helper functions
+├── results/                  # publication-ready plots, tables, etc.
+├── README.md
+└── .gitignore                # list of files to not track
 ```
 
-Set your info (only once per machine):
-```bash
-git config user.name "Your Name"
-git config user.email "your@email.com"
-```
 
----
+## 👥 Contributors
 
-## 🌿 2. Branching Model
+- Zhaoshuo Liu
 
-**Main branches**
-- `main` → always stable, production-ready
-- `develop` → (optional) integration branch
+- Yash Dhiman
 
-**Feature branches**
-- `feature/<description>` → for new features or tasks  
-- `bugfix/<description>` → for fixing issues  
-- `hotfix/<description>` → urgent fixes on `main`
+- Simran Panda
 
-Create your own branch:
-```bash
-git checkout main
-git pull origin main
-git checkout -b feature/short-description
-```
-
-Example:  
-`feature/login-ui` or `bugfix/fix-login-validation`
-
----
-
-## 💻 3. Working on Code
-
-Stage and commit your changes:
-```bash
-git add .
-git commit -m "Add login form validation"
-```
-
-✅ Commit small, focused changes  
-✅ Write clear, descriptive messages  
-
----
-
-## 🔁 4. Sync with the Team
-
-Keep your branch updated before pushing or merging:
-```bash
-git checkout main
-git pull origin main
-git checkout feature/short-description
-git merge main
-# or: git rebase main
-```
-
-If merge conflicts appear:
-- Edit the marked files
-- Choose what to keep
-- Then:
-  ```bash
-  git add .
-  git commit
-  ```
-
----
-
-## ☁️ 5. Push and Create a Pull Request (PR)
-
-Push your branch to remote:
-```bash
-git push -u origin feature/short-description
-```
-
-Then open a **Pull Request** on GitHub/GitLab:
-- ✅ Give a clear title and summary  
-- 🧠 Request at least one review  
-- 🚫 Don’t merge your own PR without approval  
-
-After the PR is merged:
-```bash
-git checkout main
-git pull origin main
-git branch -d feature/short-description
-```
-
----
-
-## 🧩 6. Best Practices
-
-✅ One branch per feature or bug  
-✅ Small, atomic commits  
-✅ Pull `main` often  
-✅ Use meaningful names (`feature/signup-form`)  
-✅ Don’t commit build files, secrets, or `.env`  
-
----
-
-## 🧠 7. Useful Commands
-
-| Command | Description |
-|----------|-------------|
-| `git status` | Show current changes |
-| `git log --oneline --graph --all` | Visualize branch history |
-| `git diff` | Show unstaged changes |
-| `git stash` / `git stash pop` | Temporarily store work |
-| `git fetch` | Get remote updates (no merge) |
-| `git branch -a` | List all branches |
-| `git remote -v` | Show remotes (origin, upstream, etc.) |
-
----
-
-## 🧹 8. Optional Tools for Teams
-
-🧾 **.gitignore** — ignore build outputs, dependencies, secrets  
-✨ **Prettier / ESLint** — enforce consistent formatting  
-⚙️ **GitHub Actions** — automate tests or deployment  
-📋 **GitHub Projects / Issues** — organize tasks and sprints  
-
----
-
-### 💡 Pro Tips
-- Use `draft` PRs for work in progress  
-- Review code with empathy and clarity  
-- Keep `main` clean — only merge approved, tested code  
-
----
-
-**Happy collaborating!** 💪  
-_Commit often, commit well, and communicate clearly._
+- Miguel Alburo
