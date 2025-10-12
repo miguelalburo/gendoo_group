@@ -7,32 +7,28 @@ This project focuses on whether *EHMT2*, an epigenetic regulator, directly influ
 ```mermaid
 gantt
     title Semester 1 Timeline
-    dateFormat  DD-MM-YY
+    dateFormat  DD-MM-YYYY
     axisFormat  %d/%m
     tickInterval 1week
     weekday monday
 
     section Video & Report
-    Literature Review     :09-10-25,22-10-25
-    1st Meeting w/ Deena & Obtain Data       :milestone, 22-10-25, 1d
-    Complete Video Pitch        :22-10-25, 08-12-25
-    Video Pitch        :milestone, 15-01-26,1d
-    Report 1st Draft      :after vis,13-01-26
-
-    S1 End       :vert, v1, 13-12-25,1m
+    Literature Review        :lit, 09-10-2025, 22-10-2025
+    1st Meeting w/ Deena     :milestone, deena, 22-10-2025, 1d
+    Video Pitch              :pitch, after link, 13-12-2025
+    Video Pitch              :milestone, 15-01-2026, 1d
+    Report 1st Draft         :after pitch, 12-01-2026
 
     section Analysis
-    Real DAA + DEA      : real, 22-10-25,3w
-    GOA + Link: vis, after real, 2w
-    Report Visualisations:   after vis, 12-01-26
-
-    S2 Start       :vert, v2, 12-01-26,1m
+    Real DAA + DEA           :real, after deena, 3w
+    GOA + Link               :link, after real, 2w
+    Visualisations    :after link, 13-12-2025
 
     section Publication Push
-
-    DAA/DEA :practise, 13-10-25,22-10-25
-    Propose Publication w/ Deena: proposal, after practise, 3w
-    Scout Public DB for Meta-Analysis: meta, after proposal, 13-12-25
+    DAA/DEA                  :practise, 13-10-2025, 22-10-2025
+    Propose Publication      :proposal, after practise, 3w
+    Scout Public DB          :db, after pitch, 1w
+    Meta Analysis            :meta, after db, 12-01-2026
 ```
 ## 🎯 Objectives
 
