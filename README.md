@@ -2,7 +2,7 @@
 
 This project focuses on whether *EHMT2*, an epigenetic regulator, directly influences immune pathways and the endothelial-to-mesenchymal transition (*EndoMT*) in liver sinusoidal epithelial cells (LSECs) which aid in the development of *hepatocellular cancer* (HCC).
 
-## Current Progress
+## 📋 Plan Overview
 
 ```mermaid
 gantt
@@ -13,10 +13,10 @@ gantt
     weekday monday
 
     section Video & Report
-    Literature Review        :lit, 09-10-2025, 22-10-2025
+    Literature Review + Workflow Setup       :lit, 09-10-2025, 22-10-2025
     1st Meeting w/ Deena     :milestone, deena, 22-10-2025, 1d
     Video Pitch              :pitch, after link, 13-12-2025
-    Video Pitch              :milestone, 15-01-2026, 1d
+    Video Pitch Deadline             :milestone, 15-01-2026, 1d
     Report 1st Draft         :after pitch, 12-01-2026
 
     section Analysis
@@ -25,8 +25,8 @@ gantt
     Visualisations    :after link, 13-12-2025
 
     section Publication Push
-    DAA/DEA                  :practise, 13-10-2025, 22-10-2025
-    Propose Publication      :proposal, after practise, 3w
+    Practise DEA + DAA                 :practise, 13-10-2025, 22-10-2025
+    Propose Publication w/ Deena      :proposal, after practise, 3w
     Scout Public DB          :db, after pitch, 1w
     Meta Analysis            :meta, after db, 12-01-2026
 ```
