@@ -9,8 +9,7 @@
 	- Alignment QC
 	- Enrichment analysis
 	- Peak calling & QC
-- Immune Markers in LSECs
-	- 
+- [ ]
 
 ## The nf-core/atacseq pipeline
 
@@ -18,7 +17,6 @@
 
 The [output documentation](https://nf-co.re/atacseq/output) contains a useful and brief summary of the outputs and tools used.
 
-## Immune Markers
 ## Links
 - [Wiki Article](https://en.wikipedia.org/wiki/ATAC-seq) Short overview.
 - [Complete Guide to Understanding and Using ATAC-Seq](https://www.activemotif.com/blog-atac-seq), Still brief but more detailed and beginner-friendly
