@@ -55,15 +55,13 @@ flowchart TB
     classDef empty height: 0, width: 0
 ```
 
-1) Analyse ATAC-seq data from LSECs with and without EHMT2 knockdown to identify alterations in chromatin accessibility regions influenced by EHMT2-mediated methylation.
+1) Analyse RNA-seq data from LSECs samples with and without EHMT2 knockdown to identify differentially expressed genes (DEGs).
 
-2) Correlate ATAC-seq findings with bulk RNA-seq data from the same samples to determine how EHMT2’s downstream
-effects influence gene transcription, particularly for EndoMT markers (e.g., αSMA, vimentin) and immune cell recruitment
-pathways.
+2) Analyse ATAC-seq data from LSECs samples with and without EHMT2 knockdown to identify differentially accessible regions (DERs).
 
-3) Identify key differentially accessible regions and associated genes that may explain EHMT2’s role in promoting immune
-evasion in the HCC TME, supporting further experiments with human HCC samples and in vitro models (e.g., flow-based
-adhesion assays investigating EHMT2 impact on immune cell recruitment).
+3) Compare DEGs against DERs to validate downstream effects of EHMT2 knockdown.
+
+4) Study DEGs and DERs to find associations with immune markers.
 
 ## 📁 Files & Directories
 
@@ -75,16 +73,13 @@ bioinformatics-project/
 │   ├── report.pdf
 │   ├── presentation.mov 
 │   └── references.bib
-├── notebooks/
+├── notebooks/                # markdown notes
 ├── data/
-│   ├── raw/                  # symbolic links or small example subsets only
-│   ├── processed/
-│   └── metadata/             # sample info, config, manifests
-├── scripts/
-│   ├── preprocessing/ 
-│   ├── analysis/             # main workflows
-│   ├── visualization/
-│   └── utils/                # helper functions
+│   └── raw/                  # symbolic links to Blue BEAR. do not track
+├── rnaseq-scripts/           # for Yash
+│   └── preprocessing/ 
+├── atacseq-scripts/          # for Leo
+│   └── preprocessing/ 
 ├── results/                  # publication-ready plots, tables, etc.
 ├── README.md
 └── .gitignore                # list of files to not track
