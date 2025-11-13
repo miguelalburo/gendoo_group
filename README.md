@@ -15,14 +15,13 @@ gantt
     section Video & Report
     Literature Review + Workflow Setup       :lit, 09-10-2025, 22-10-2025
     1st Meeting w/ Deena     :milestone, deena, 22-10-2025, 1d
-    Video Pitch              :pitch, after link, 13-12-2025
+    Video Pitch              :pitch, after real, 13-12-2025
     Video Pitch Deadline             :milestone, 15-01-2026, 1d
     Report 1st Draft         :after pitch, 12-01-2026
 
     section Analysis
-    Real DAA + DEA           :real, after deena, 3w
-    GOA + Link               :link, after real, 2w
-    Visualisations    :after link, 13-12-2025
+    Real DAA + DEA           :real, after deena, 5w
+    Visualisations    :after real, 13-12-2025
 
     section Publication Push
     Practise DEA + DAA                 :practise, 13-10-2025, 22-10-2025
